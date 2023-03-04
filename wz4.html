@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>表白打印机</title>
+	<style>
+		body{
+			background-color: pink;
+			color: white;
+		}
+		
+		h1::after{
+			content: '♥';
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="h">XXX</h1>
+	<script>
+		let str = "这是我想对你说的话:I love you"
+	    let i = 0
+		setInterval(function(){
+			if(i == str.length){
+				return
+			}
+		    document.querySelector('.h').innerHTML += str[i]
+			i++
+		},1000)
+	</script>
+</body>
+</html>

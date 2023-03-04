@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>不一样的计算器</title>
+</head>
+<body>
+	<button onclick="a()">1+1=？</button>
+	<script>
+		//点击事件
+		function a(){
+			alert(2)
+		}
+		
+	</script>
+	<button class="btn">2X2</button>
+	<script>
+		let btn = document.querySelector('.btn')
+		
+		//点击事件
+		btn.onclick = function (){
+			alert(4)
+		}
+	</script>
+	
+	
+</body>
+</html>
